@@ -1,4 +1,4 @@
-name: mpv AppImage2
+name: mpv AppImage
 concurrency:
   group: build-${{ github.ref }}
   cancel-in-progress: true
@@ -14,7 +14,7 @@ jobs:
     container: artixlinux/artixlinux:latest
     steps:
     - uses: actions/checkout@v4
-    - name: build
+    - name: Install dependencies
       run: |
         sed -i 's/DownloadUser/#DownloadUser/g' /etc/pacman.conf
         pacman -Syu --noconfirm base-devel strace patchelf curl wget pulseaudio pulseaudio-alsa \
