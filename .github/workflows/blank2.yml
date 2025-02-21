@@ -57,6 +57,7 @@ jobs:
           mesa \
           meson \
           mujs \
+          nasm \
           libpipewire \
           rubberband \
           openal \
