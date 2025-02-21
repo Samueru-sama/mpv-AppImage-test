@@ -55,6 +55,7 @@ jobs:
           libxv \
           luajit \
           mesa \
+          meson \
           mujs \
           libpipewire \
           rubberband \
