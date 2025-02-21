@@ -61,7 +61,6 @@ jobs:
           rubberband \
           openal \
           uchardet \
-          vapoursynth \
           vulkan-icd-loader \
           wayland \
           wayland-protocols \
