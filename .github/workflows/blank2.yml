@@ -56,7 +56,6 @@ jobs:
           luajit \
           mesa \
           meson \
-          mujs \
           nasm \
           libpipewire \
           rubberband \
@@ -65,6 +64,7 @@ jobs:
           vapoursynth \
           vulkan-icd-loader \
           wayland \
+          wayland-protocols \
           zlib \
           zsync
 
