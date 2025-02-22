@@ -67,6 +67,14 @@ jobs:
           zlib \
           zsync
 
+    - name: Install iculess libxml2
+      run: |
+        FFMPEG_URL="https://github.com/Samueru-sama/llvm-libs-debloated/releases/download/continuous/ffmpeg-mini-x86_64.pkg.tar.zst"
+        wget --retry-connrefused --tries=30 "$FFMPEG_URL" -O ./ffmpeg-mini.pkg.tar.zst
+        pacman -U --noconfirm ./ffmpeg-mini.pkg.tar.zst
+        rm -f ./ffmpeg-mini.pkg.tar.zst
+        sudo pacman -Rsndd vapoursynth
+
     - name: Make AppImage
       run: |
         chmod a+x ./mpv-appimage.sh && ./mpv-appimage.sh
