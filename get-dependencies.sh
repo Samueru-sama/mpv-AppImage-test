@@ -63,6 +63,7 @@ pacman -Syu --noconfirm \
 	uchardet \
 	vulkan-headers \
 	vulkan-icd-loader \
+	vulkan-radeon \
 	wayland \
 	wayland-protocols \
 	wget \
