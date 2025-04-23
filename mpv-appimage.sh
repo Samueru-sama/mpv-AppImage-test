@@ -32,7 +32,8 @@ wget "$LIB4BN" -O ./lib4bin
 chmod +x ./lib4bin
 ./lib4bin -p -v -s -k -e \
 	"$(command -v mpv)" \
-	/usr/lib/libEGL*
+	/usr/lib/libEGL* \
+	/usr/lib/libvulkan*
 
 VERSION=$(./bin/mpv --version | awk 'FNR==1 {print $2; exit}')
 if [ -z "$VERSION" ]; then
