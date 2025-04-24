@@ -16,7 +16,7 @@ LLVM_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/
 MESA_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/mesa-mini-$PKG_TYPE"
 VULKAN_RADEON_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-radeon-mini-$PKG_TYPE"
 VULKAN_INTEL_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-intel-mini-$PKG_TYPE"
-VULKAN_NOUVEAU_url="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-nouveau-mini-$PKG_TYPE"
+VULKAN_NOUVEAU_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-nouveau-mini-$PKG_TYPE"
 VULKAN_PANFROST_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-panfrost-mini-$PKG_TYPE"
 VULKAN_FREEDRENO_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-freedreno-mini-$PKG_TYPE"
 VULKAN_BROADCOM_URL="https://github.com/pkgforge-dev/llvm-libs-debloated/releases/download/continuous/vulkan-broadcom-mini-$PKG_TYPE"
@@ -86,7 +86,7 @@ wget --retry-connrefused --tries=30 "$OPUS_URL"            -O ./opus-nano.pkg.ta
 wget --retry-connrefused --tries=30 "$LLVM_URL"            -O ./llvm-libs.pkg.tar.zst
 wget --retry-connrefused --tries=30 "$MESA_URL"            -O ./mesa.pkg.tar.zst
 wget --retry-connrefused --tries=30 "$VULKAN_RADEON_URL"   -O ./vulkan-radeon.pkg.tar.zst
-wget --retry-connrefused --tries=30 "$VULKAN_NOUVEAU_URL"  -O ./vulkan-radeon.pkg.tar.zst
+wget --retry-connrefused --tries=30 "$VULKAN_NOUVEAU_URL"  -O ./vulkan-nouveau.pkg.tar.zst
 
 if [ "$(uname -m)" = 'x86_64' ]; then
 	wget --retry-connrefused --tries=30 "$VULKAN_INTEL_URL"     -O ./vulkan-intel.pkg.tar.zst
